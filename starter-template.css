@@ -26,25 +26,25 @@
     100% { opacity:0; }
 }
 @keyframes colors{
-    0% { color:red; }
-    25% { color:purple; }
-    50% { color:green; }
-    75% { color:yellow; }
-    100% { color:blue; }
+    0% { background-color:red; }
+    25% { background-color:purple; }
+    50% { background-color:green; }
+    75% { background-color:yellow; }
+    100% { background-color:blue; }
 }
 @-webkit-keyframes colors{
-    0% { color:red; }
-    25% { color:purple; }
-    50% { color:green; }
-    75% { color:yellow; }
-    100% { color:blue; }
+    0% { background-color:red; }
+    25% { background-color:purple; }
+    50% { background-color:green; }
+    75% { background-color:yellow; }
+    100% { background-color:blue; }
 }
 @-moz-keyframes colors{
-    0% { color:red; }
-    25% { color:purple; }
-    50% { color:green; }
-    75% { color:yellow; }
-    100% { color:blue; }
+    0% { background-color:red; }
+    25% { background-color:purple; }
+    50% { background-color:green; }
+    75% { background-color:yellow; }
+    100% { background-color:blue; }
 }
 *{
   font-family: 'myriad_set_proultralight';
@@ -63,10 +63,11 @@ a{
   border: 10px;
   color: white;
 }
-a:hover{
+div.navbar-brand:hover{
   -webkit-animation: colors 5s infinite;
   -moz-animation: colors 5s infinite;
   animation: colors 5s infinite;
+  animation-fill-mode: forwards;
 }
 select{
   background-color: black;
@@ -159,6 +160,15 @@ footer{
   width: auto;
   height: 60px;
 }
+div.navbar-brand{
+  background-color: red;
+  height: 60px;
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 @media all and (max-width:630px) {
 
   .key{
@@ -222,5 +232,14 @@ footer{
   .form-group{
     padding-left: 10px;
     padding-right:10px;
+  }
+  div.navbar-brand{
+    background-color: red;
+    height: 43px;
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 }
