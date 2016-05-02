@@ -1,7 +1,7 @@
 Watson X Wayback
 ================
 
-Using IBM Watson's AlchemyLanguage API, I parse any webpage's plain text from WaybackMachine's archives.
+Using IBM Watson's AlchemyLanguage API, this app parses any webpage's plain text from WaybackMachine's archives.
 This is then filtered by Watson's tone analyzer which returns the emotional composition of the webpage.
 Watson generalizes tone in 5 emotions: Anger, Disgust, Fear, Joy, and Sadness.
 
