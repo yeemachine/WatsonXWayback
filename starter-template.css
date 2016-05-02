@@ -10,6 +10,42 @@
     font-style: normal;
 
 }
+@keyframes blink{
+    0% { opacity:0; }
+    50% { opacity:1; }
+    100% { opacity:0; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:0; }
+    50% { opacity:1; }
+    100% { opacity:0; }
+}
+@-moz-keyframes blink{
+    0% { opacity:0; }
+    50% { opacity:1; }
+    100% { opacity:0; }
+}
+@keyframes colors{
+    0% { color:red; }
+    25% { color:purple; }
+    50% { color:green; }
+    75% { color:yellow; }
+    100% { color:blue; }
+}
+@-webkit-keyframes colors{
+    0% { color:red; }
+    25% { color:purple; }
+    50% { color:green; }
+    75% { color:yellow; }
+    100% { color:blue; }
+}
+@-moz-keyframes colors{
+    0% { color:red; }
+    25% { color:purple; }
+    50% { color:green; }
+    75% { color:yellow; }
+    100% { color:blue; }
+}
 *{
   font-family: 'myriad_set_proultralight';
   margin:0;
@@ -26,6 +62,11 @@ a{
   text-decoration: none;
   border: 10px;
   color: white;
+}
+a:hover{
+  -webkit-animation: colors 5s infinite;
+  -moz-animation: colors 5s infinite;
+  animation: colors 5s infinite;
 }
 select{
   background-color: black;
@@ -91,21 +132,7 @@ li{
     animation: blink 0.7s 8;
     animation-fill-mode: forwards;
 }
-@keyframes blink{
-    0% { opacity:0; }
-    50% { opacity:1; }
-    100% { opacity:0; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:0; }
-    50% { opacity:1; }
-    100% { opacity:0; }
-}
-@-moz-keyframes blink{
-    0% { opacity:0; }
-    50% { opacity:1; }
-    100% { opacity:0; }
-}
+
 section{
   display: flex;
   flex-direction: row-reverse;
@@ -129,7 +156,7 @@ footer{
   color:white;
 }
 @media all and (max-width:630px) {
-  
+
   .key{
     display: flex;
     flex-direction: row;
