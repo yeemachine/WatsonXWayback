@@ -4,7 +4,8 @@ var submitData= function(){
   urlBase = urlBase + "apikey="+apiKey;
   var inputYear= $("#sel1").val();
   var inputMonth= $("#sel2").val();
-  var inputLink = $("#comment").val();
+  var inputLink = $("#comment").text();
+  console.log(inputLink);
 
   urlBase = urlBase+"&url=" + encodeURIComponent("http://web.archive.org/web/"+inputYear+inputMonth+"12012102id_/" + inputLink);
   urlBase = urlBase + "&outputMode=json";
@@ -18,7 +19,7 @@ var submitData= function(){
     success: function(data) {
       console.log(data);
       console.log(data.text);
-      $( "p" ).append( "<br/>" +inputMonth+"."+ inputYear +"</br>"+ data.text + "<br/>"  );
+    $( ".output" ).append( "<br/>" +inputMonth+"."+ inputYear +"</br>"+ data.text + "<br/>"  );
     }
 
   });
