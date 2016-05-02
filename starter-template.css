@@ -13,6 +13,7 @@
 font-family: 'MyriadPro-Regular';
 src: url('fonts/MyriadPro-Regular.otf');
 }
+
 @keyframes blink{
     0% { opacity:0; }
     50% { opacity:1; }
@@ -75,9 +76,15 @@ div.navbar-brand:hover{
   animation: colors 5s infinite;
   animation-fill-mode: forwards;
 }
+.navbar-brand{
+
+}
 select{
+
   background-color: black;
   color: white;
+  font-family: 'myriad_set_proultralight';
+  font-size: 20px;
 }
 container{
   display: flex;
@@ -88,6 +95,7 @@ container{
 .element{
 display:inline;
 font-family: 'myriad_set_proultralight';
+font-size: 20px;
 
 }
 .navbar{
@@ -108,7 +116,7 @@ font-family: 'myriad_set_proultralight';
   margin-left: auto;
   margin-right: auto;
   color:black;
-  font-family: 'myriad_set_proultralight';
+  font-family: 'MyriadPro-Regular';
 }
 .chart{
   display:flex;
@@ -179,6 +187,14 @@ div.navbar-brand{
   align-items: center;
   justify-content: center;
 }
+
+.Watson{
+  font-family:   "HelveticaNeue-Light";
+  font-size: 10px;
+}
+span{
+  font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold";
+}
 @media all and (max-width:630px) {
 
 
@@ -215,11 +231,11 @@ div.navbar-brand{
     justify-content: center;
   }
   .navbar{
-    height:120px
+    height:150px
   }
   .spacer{
     width: auto;
-    height: 120px;
+    height: 150px;
   }
   container{
     margin-top: 15px;
@@ -245,5 +261,8 @@ div.navbar-brand{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+  }
+  .Watson{
+    display: none;
   }
 }
