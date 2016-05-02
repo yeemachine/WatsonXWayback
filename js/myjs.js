@@ -35,7 +35,7 @@ var emotions=[];
     console.log(emotion);
     $( ".output" ).prepend(
     "<li class='chart'><div style='width:"+anger+"%;height:30px;margin-top:15px;background-color:red'></div><div style='width:"+disgust+"%;height:30px;margin-top:15px;background-color:purple'></div><div style='width:"+fear+"%;height:30px;margin-top:15px;background-color:green'></div><div style='width:"+joy+"%;height:30px;margin-top:15px;background-color:yellow'></div><div style='width:"+sadness+"%;height:30px;margin-top:15px;background-color:blue'></div></li>");
-    $( ".output" ).prepend( "<li>"+"<br/>" +inputMonth+"."+ inputYear +"</br>"+ data.text + "<br/>"+"</li>"  );
+    $( ".output" ).prepend( "<li>"+"<br/>" +inputMonth+". "+ inputYear +"</br>"+ data.text + "<br/>"+"</li>"  );
     }
 
 

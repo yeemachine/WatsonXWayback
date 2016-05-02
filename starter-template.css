@@ -8,7 +8,10 @@
          url('fonts/myriad_set_pro_100_ultralight-webfont.svg#myriad_set_proultralight') format('svg');
     font-weight: normal;
     font-style: normal;
-
+}
+@font-face {
+font-family: 'MyriadPro-Regular';
+src: url('fonts/MyriadPro-Regular.otf');
 }
 @keyframes blink{
     0% { opacity:0; }
@@ -47,13 +50,16 @@
     100% { background-color:blue; }
 }
 *{
-  font-family: 'myriad_set_proultralight';
+
   margin:0;
   border: 0;
   list-style-type: none;
   outline: none;
 
 
+}
+html{
+  font-family: 'MyriadPro-Regular';
 }
 body{
   background-color: white;
@@ -81,6 +87,8 @@ container{
 }
 .element{
 display:inline;
+font-family: 'myriad_set_proultralight';
+
 }
 .navbar{
   position:fixed;
@@ -100,6 +108,7 @@ display:inline;
   margin-left: auto;
   margin-right: auto;
   color:black;
+  font-family: 'myriad_set_proultralight';
 }
 .chart{
   display:flex;
@@ -145,6 +154,7 @@ section{
   justify-content: center;
   align-items: center;
   margin-right: 15px;
+  font-family: 'myriad_set_proultralight'
 }
 
 footer{
@@ -171,15 +181,7 @@ div.navbar-brand{
 }
 @media all and (max-width:630px) {
 
-  .key{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-right: 4px;
-    font-size: 10px;
 
-  }
   li{
     padding-left: 0px;
     padding-bottom:15px;
@@ -191,6 +193,7 @@ div.navbar-brand{
     justify-content: center;
     color:white;
     font-size:10px;
+    font-family: 'myriad_set_proultralight';
   }
   .key{
     display: none;
@@ -199,6 +202,7 @@ div.navbar-brand{
     align-items: center;
     margin-right: 4px;
     font-size: 10px;
+
 
   }
   #black{
