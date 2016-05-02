@@ -1,10 +1,22 @@
+@font-face {
+    font-family: 'myriad_set_proultralight';
+    src: url('fonts/myriad_set_pro_100_ultralight-webfont.eot');
+    src: url('fonts/myriad_set_pro_100_ultralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/myriad_set_pro_100_ultralight-webfont.woff2') format('woff2'),
+         url('fonts/myriad_set_pro_100_ultralight-webfont.woff') format('woff'),
+         url('fonts/myriad_set_pro_100_ultralight-webfont.ttf') format('truetype'),
+         url('fonts/myriad_set_pro_100_ultralight-webfont.svg#myriad_set_proultralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 *{
-  font-family: futura;
+  font-family: 'myriad_set_proultralight';
   margin:0;
   border: 0;
   list-style-type: none;
   outline: none;
-  color: white;
+
 
 }
 body{
@@ -13,9 +25,11 @@ body{
 a{
   text-decoration: none;
   border: 10px;
+  color: white;
 }
 select{
   background-color: black;
+  color: white;
 }
 container{
   display: flex;
@@ -34,6 +48,7 @@ display:inline;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 .output{
   display:block;
@@ -42,6 +57,15 @@ display:inline;
   margin-right: auto;
   color:black;
 }
+.chart{
+  display:flex;
+  flex-direction: row;
+
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
 ul{
   width:80%;
   margin-left: auto;

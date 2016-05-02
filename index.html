@@ -19,6 +19,8 @@
     <script src="js/myjs.js"></script>
     <script src="js/typed.js"></script>
     <script type="text/javascript" src="js/jquery.jrumble.1.3.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
 
     <script>
@@ -33,16 +35,54 @@
       }, function(){
         $(this).css("color", "white");
       });
-
   });
-
-
-
-
-
-
 </script>
-
+<script>
+// $(function () {
+//     $('#container').highcharts({
+//         chart: {
+//             type: 'bar'
+//         },
+//         title: {
+//             text: ''
+//         },
+//         xAxis: {
+//             categories: ['emotion']
+//         },
+//         yAxis: {
+//             min: 0,
+//             title: {
+//                 text: ''
+//             }
+//         },
+//         legend: {
+//             reversed: true
+//         },
+//         plotOptions: {
+//             series: {
+//                 stacking: 'normal'
+//             }
+//         },
+//         series: [{
+//             name: 'anger',
+//             data: [5]
+//         }, {
+//             name: 'disgust',
+//             data: [2]
+//         },{
+//             name: 'fear',
+//             data: [2]
+//         },{
+//             name: 'joy',
+//             data: [2]
+//         },{
+//             name: 'sadness',
+//             data: [2]
+//
+//         }]
+//     });
+// });
+</script>
   </head>
 
   <body>
@@ -113,7 +153,8 @@
 
 
 
-  <p class="output"></p>
+  <ul class="output"></ul>
+  <div id="container" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
 
 
 
