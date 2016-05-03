@@ -195,6 +195,10 @@ div.navbar-brand{
 span{
   font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold";
 }
+.mobile{
+  width:30px;
+  height:30px;
+}
 @media all and (max-width:630px) {
 
 
@@ -210,6 +214,10 @@ span{
     color:white;
     font-size:10px;
     font-family: 'myriad_set_proultralight';
+    -ms-transform: rotate(-90deg); /* IE 9 */
+   -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+   transform: rotate(-90deg);
+   padding-right: 40px;
   }
   .key{
     display: none;
@@ -263,6 +271,22 @@ span{
     justify-content: center;
   }
   .Watson{
-    display: none;
+    position:fixed;
+    background-color: black;
+    height:50px;
+    width:30px;
+    right:0;
+    bottom:0;
+    font-size: 8px;
+  }
+
+  footer{
+    position: fixed;
+    right: 0;
+    bottom:50px;
+  }
+  .mobile{
+    width:30px;
+    height:50px;
   }
 }
