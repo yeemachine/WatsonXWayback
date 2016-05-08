@@ -156,6 +156,14 @@ section{
   flex-direction: row-reverse;
 
 }
+.keynav{
+  flex-direction: row;
+}
+.keyelem{
+  display:none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .key{
   display: flex;
   flex-direction: row;
@@ -199,6 +207,11 @@ span{
   width:30px;
   height:30px;
 }
+
+.number{
+  text-align: center;
+  font-size: 10px;
+}
 @media all and (max-width:630px) {
 
 
@@ -239,11 +252,11 @@ span{
     justify-content: center;
   }
   .navbar{
-    height:150px
+    height:200px
   }
   .spacer{
     width: auto;
-    height: 150px;
+    height: 200px;
   }
   container{
     margin-top: 15px;
@@ -288,5 +301,9 @@ span{
   .mobile{
     width:30px;
     height:50px;
+    display: none;
+  }
+  .keyelem{
+    display:block;
   }
 }

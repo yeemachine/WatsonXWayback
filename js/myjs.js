@@ -1,3 +1,5 @@
+
+
 var submitData= function(){
   var urlBase = "http://gateway-a.watsonplatform.net/calls/url/URLGetEmotion?";
   var apiKey= "12185cdb4698b0f203b59d58f0b11d0ff2b6e546";
@@ -32,12 +34,20 @@ var emotions=[];
     var fear=(data.docEmotions.fear/emotion) * 100;
     var joy=(data.docEmotions.joy/emotion) * 100;
     var sadness=(data.docEmotions.sadness/emotion) * 100;
+
+    var postanger= parseFloat(anger).toFixed(2);
+    var postdisgust= parseFloat(disgust).toFixed(2);
+    var postfear= parseFloat(fear).toFixed(2);
+    var postjoy= parseFloat(joy).toFixed(2);
+    var postsadness= parseFloat(sadness).toFixed(2);
+
     console.log(emotion);
+    // $( ".output" ).prepend(
+    // "<li class='chart'><div class='number' style='width:"+anger+"%;height:30px;color:red;margin-top:15px;'>"+postanger+"%</div><div class='number' style='width:"+disgust+"%;height:30px;margin-top:25px;color:purple'>"+postdisgust+"%</div><div class='number' style='width:"+fear+"%;height:30px;color:green;margin-top:35px;'>"+postfear+"%</div><div class='number' style='width:"+joy+"%;height:30px;color:black;margin-top:45px;'>"+postjoy+"%</div><div class='number' style='width:"+sadness+"%;height:30px;color:blue;margin-top:55px;'>"+postsadness+"%</div></li>");
     $( ".output" ).prepend(
     "<li class='chart'><div style='width:"+anger+"%;height:30px;margin-top:15px;background-color:red'></div><div style='width:"+disgust+"%;height:30px;margin-top:15px;background-color:purple'></div><div style='width:"+fear+"%;height:30px;margin-top:15px;background-color:green'></div><div style='width:"+joy+"%;height:30px;margin-top:15px;background-color:yellow'></div><div style='width:"+sadness+"%;height:30px;margin-top:15px;background-color:blue'></div></li>");
     $( ".output" ).prepend( "<li>"+"<br/>" +inputMonth+". "+ inputYear +"</br>"+ data.text + "<br/>"+"</li>"  );
     }
-
 
 
 
