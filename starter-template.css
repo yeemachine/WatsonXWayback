@@ -96,12 +96,14 @@ div.navbar-brand:hover{
   -moz-animation: colors 5s infinite;
   animation: colors 5s infinite;
   animation-fill-mode: forwards;
+  cursor:pointer;
 }
 div.reset:hover{
   -webkit-animation: colorsR 5s infinite;
   -moz-animation: colorsR 5s infinite;
   animation: colorsR 5s infinite;
   animation-fill-mode: forwards;
+  cursor:pointer;
 }
 .navbar-brand{
 border: 10px;
