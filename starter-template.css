@@ -50,6 +50,27 @@ src: url('fonts/MyriadPro-Regular.otf');
     75% { background-color:yellow; }
     100% { background-color:blue; }
 }
+@keyframes colorsR{
+    0% { background-color:purple; }
+    25% { background-color:green; }
+    50% { background-color:yellow; }
+    75% { background-color:blue; }
+    100% { background-color:red; }
+}
+@-webkit-keyframes colorsR{
+    0% { background-color:purple; }
+    25% { background-color:green; }
+    50% { background-color:yellow; }
+    75% { background-color:blue; }
+    100% { background-color:red; }
+}
+@-moz-keyframes colorsR{
+    0% { background-color:purple; }
+    25% { background-color:green; }
+    50% { background-color:yellow; }
+    75% { background-color:blue; }
+    100% { background-color:red; }
+}
 *{
 
   margin:0;
@@ -74,6 +95,12 @@ div.navbar-brand:hover{
   -webkit-animation: colors 5s infinite;
   -moz-animation: colors 5s infinite;
   animation: colors 5s infinite;
+  animation-fill-mode: forwards;
+}
+div.reset:hover{
+  -webkit-animation: colorsR 5s infinite;
+  -moz-animation: colorsR 5s infinite;
+  animation: colorsR 5s infinite;
   animation-fill-mode: forwards;
 }
 .navbar-brand{
@@ -194,6 +221,16 @@ div.navbar-brand{
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+}
+div.reset{
+  background-color: purple;
+  height: 60px;
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .Watson{
@@ -276,6 +313,15 @@ span{
   }
   div.navbar-brand{
     background-color: red;
+    height: 43px;
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  div.reset{
+    background-color: purple;
     height: 43px;
     width: 120px;
     display: flex;
