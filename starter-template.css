@@ -164,7 +164,7 @@ font-size: 20px;
 }
 ol{
   padding:0px;
-  height:100px;
+  height:110px;
 }
 .container{
   display:flex;
@@ -406,4 +406,9 @@ span{
   .keyelem{
     display:block;
   }
+}
+
+ol{
+  padding:0px;
+  height:130px;
 }

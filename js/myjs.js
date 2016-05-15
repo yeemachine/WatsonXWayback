@@ -84,6 +84,7 @@ var emotions=[];
          $( ".anger.line" ).removeClass("bar");
          $( ".number.anger" ).addClass("show");
          $( ".number.anger" ).removeClass("nhide");
+
         },
         mouseleave: function(e) {
         // Hover event handler
@@ -91,6 +92,7 @@ var emotions=[];
          $( ".anger.line" ).addClass("bar");
          $( ".number.anger" ).addClass("nhide");
          $( ".number.anger" ).removeClass("show");
+        
         },
         click: function(e) {
   // Click event handler
