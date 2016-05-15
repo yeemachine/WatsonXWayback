@@ -79,9 +79,12 @@ src: url('fonts/MyriadPro-Regular.otf');
   outline: none;
 
 
+
+
 }
 html{
   font-family: 'MyriadPro-Regular';
+
 }
 body{
   background-color: white;

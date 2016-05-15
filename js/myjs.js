@@ -25,7 +25,7 @@ var emotions=[];
       console.log(data.text);
 
       if(data.status==="ERROR"){
-          $( ".output" ).prepend( "<br>Please try a different date or website.<br>");
+          $( ".output" ).prepend( "<br>Please try a different date or website.<br>").fadeIn("slow");
       }else{
 
     var preanger=parseFloat(data.docEmotions.anger);
@@ -52,10 +52,10 @@ var emotions=[];
     if(wayback.substr(0,27)!="http://web.archive.org/web/"){
       console.log("no date")
       $( ".output" ).prepend(
-      "<li class='chart'><div class='number anger nhide' style='width:"+anger+"%;height:30px;margin-top:15px;'>"+postanger+"%</div><div class='number disgust nhide' style='width:"+disgust+"%;height:30px;margin-top:15px;'>"+postdisgust+"%</div><div class='number fear nhide' style='width:"+fear+"%;height:30px;margin-top:15px;'>"+postfear+"%</div><div class='number joy nhide' style='width:"+joy+"%;height:30px;margin-top:15px;'>"+postjoy+"%</div><div class='number sadness nhide' style='width:"+sadness+"%;height:30px;margin-top:15px;'>"+postsadness+"%</div></li>");
+      "<li class='chart'><div class='number anger nhide' style='width:"+anger+"%;height:30px;margin-top:15px;'>"+postanger+"%</div><div class='number disgust nhide' style='width:"+disgust+"%;height:30px;margin-top:15px;'>"+postdisgust+"%</div><div class='number fear nhide' style='width:"+fear+"%;height:30px;margin-top:15px;'>"+postfear+"%</div><div class='number joy nhide' style='width:"+joy+"%;height:30px;margin-top:15px;'>"+postjoy+"%</div><div class='number sadness nhide' style='width:"+sadness+"%;height:30px;margin-top:15px;'>"+postsadness+"%</div></li>").find("li:first").hide().fadeIn('slow');
       $( ".output" ).prepend(
-      "<li class='chart'><div class='anger line bar' style='width:"+anger+"%;margin-top:15px;background-color:red'></div><div class='disgust line bar' style='width:"+disgust+"%;margin-top:15px;background-color:purple'></div><div class='fear line bar' style='width:"+fear+"%;margin-top:15px;background-color:green'></div><div class='joy line bar' style='width:"+joy+"%;margin-top:15px;background-color:yellow'></div><div class='sadness line bar' style='width:"+sadness+"%;margin-top:15px;background-color:blue'></div></li>");
-      $( ".output" ).prepend( "<li>"+"<br>Current Site<br><br>"+ data.text + "<br>"+"</li>"  );
+      "<li class='chart'><div class='anger line bar' style='width:"+anger+"%;margin-top:15px;background-color:red'></div><div class='disgust line bar' style='width:"+disgust+"%;margin-top:15px;background-color:purple'></div><div class='fear line bar' style='width:"+fear+"%;margin-top:15px;background-color:green'></div><div class='joy line bar' style='width:"+joy+"%;margin-top:15px;background-color:yellow'></div><div class='sadness line bar' style='width:"+sadness+"%;margin-top:15px;background-color:blue'></div></li>").find("li:first").hide().fadeIn('slow');
+      $( ".output" ).prepend( "<li>"+"<br>Current Site<br><br>"+ data.text + "<br>"+"</li>"  ).find("li:first").hide().fadeIn('slow');
     }else{
 
 
@@ -76,10 +76,10 @@ var emotions=[];
 
 
     $( ".output" ).prepend(
-    "<li class='chart'><div class='number anger nhide' style='width:"+anger+"%;height:30px;margin-top:15px;'>"+postanger+"%</div><div class='number disgust nhide' style='width:"+disgust+"%;height:30px;margin-top:15px;'>"+postdisgust+"%</div><div class='number fear nhide' style='width:"+fear+"%;height:30px;margin-top:15px;'>"+postfear+"%</div><div class='number joy nhide' style='width:"+joy+"%;height:30px;margin-top:15px;'>"+postjoy+"%</div><div class='number sadness nhide' style='width:"+sadness+"%;height:30px;margin-top:15px;'>"+postsadness+"%</div></li>");
+    "<li class='chart'><div class='number anger nhide' style='width:"+anger+"%;height:30px;margin-top:15px;'>"+postanger+"%</div><div class='number disgust nhide' style='width:"+disgust+"%;height:30px;margin-top:15px;'>"+postdisgust+"%</div><div class='number fear nhide' style='width:"+fear+"%;height:30px;margin-top:15px;'>"+postfear+"%</div><div class='number joy nhide' style='width:"+joy+"%;height:30px;margin-top:15px;'>"+postjoy+"%</div><div class='number sadness nhide' style='width:"+sadness+"%;height:30px;margin-top:15px;'>"+postsadness+"%</div></li>").find("li:first").hide().fadeIn('slow');
     $( ".output" ).prepend(
-    "<li class='chart'><div class='anger line bar' style='width:"+anger+"%;margin-top:15px;background-color:red'></div><div class='disgust line bar' style='width:"+disgust+"%;margin-top:15px;background-color:purple'></div><div class='fear line bar' style='width:"+fear+"%;margin-top:15px;background-color:green'></div><div class='joy line bar' style='width:"+joy+"%;margin-top:15px;background-color:yellow'></div><div class='sadness line bar' style='width:"+sadness+"%;margin-top:15px;background-color:blue'></div></li>");
-    $( ".output" ).prepend( "<li>"+"<br/>" +actualyear+"-"+actualmonth+"-"+actualday+"   "+actualhour+":"+actualmin+"</br><br>"+ data.text + "<br/>"+"</li>"  );
+    "<li class='chart'><div class='anger line bar' style='width:"+anger+"%;margin-top:15px;background-color:red'></div><div class='disgust line bar' style='width:"+disgust+"%;margin-top:15px;background-color:purple'></div><div class='fear line bar' style='width:"+fear+"%;margin-top:15px;background-color:green'></div><div class='joy line bar' style='width:"+joy+"%;margin-top:15px;background-color:yellow'></div><div class='sadness line bar' style='width:"+sadness+"%;margin-top:15px;background-color:blue'></div></li>").find("li:first").hide().fadeIn('slow');
+    $( ".output" ).prepend( "<li>"+"<br/>" +actualyear+"-"+actualmonth+"-"+actualday+"   "+actualhour+":"+actualmin+"</br><br>"+ data.text + "<br/>"+"</li>"  ).find("li:first").hide().fadeIn('slow');
     }
 
 
