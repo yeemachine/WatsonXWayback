@@ -249,7 +249,40 @@ span{
 
 .number{
   text-align: center;
-  font-size: 10px;
+
+}
+
+.bar{
+  height:30px;
+  transition: .5s;
+}
+.hover{
+  height:50px;
+  transition: .5s;
+
+}
+.anger{
+
+}
+.disgust{
+
+}
+.fear{
+
+}
+.joy{
+
+}
+.sadness{
+
+}
+.nhide{
+  color:transparent;
+  transition: .5s;
+}
+.show{
+  color:black;
+  transition:.5s;
 }
 @media all and (max-width:630px) {
 
