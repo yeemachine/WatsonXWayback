@@ -46,102 +46,120 @@
   0% {
     background-color: red;
   }
-  25% {
+  12% {
     background-color: purple;
   }
-  50% {
+  37% {
     background-color: green;
   }
-  75% {
+  62% {
     background-color: yellow;
   }
-  100% {
+  88% {
     background-color: blue;
+  }
+  100% {
+    background-color: red;
   }
 }
 @-webkit-keyframes colors {
   0% {
     background-color: red;
   }
-  25% {
+  12% {
     background-color: purple;
   }
-  50% {
+  37% {
     background-color: green;
   }
-  75% {
+  62% {
     background-color: yellow;
   }
-  100% {
+  88% {
     background-color: blue;
+  }
+  100% {
+    background-color: red;
   }
 }
 @-moz-keyframes colors {
   0% {
     background-color: red;
   }
-  25% {
+  12% {
     background-color: purple;
   }
-  50% {
+  37% {
     background-color: green;
   }
-  75% {
+  62% {
     background-color: yellow;
   }
-  100% {
+  88% {
     background-color: blue;
+  }
+  100% {
+    background-color: red;
   }
 }
 @keyframes colorsR {
   0% {
     background-color: purple;
   }
-  25% {
+  12% {
     background-color: green;
   }
-  50% {
+  37% {
     background-color: yellow;
   }
-  75% {
+  62% {
     background-color: blue;
   }
-  100% {
+  88% {
     background-color: red;
+  }
+  100% {
+    background-color: purple;
   }
 }
 @-webkit-keyframes colorsR {
   0% {
     background-color: purple;
   }
-  25% {
+  12% {
     background-color: green;
   }
-  50% {
+  37% {
     background-color: yellow;
   }
-  75% {
+  62% {
     background-color: blue;
   }
-  100% {
+  88% {
     background-color: red;
+  }
+  100% {
+    background-color: purple;
   }
 }
 @-moz-keyframes colorsR {
   0% {
     background-color: purple;
   }
-  25% {
+  12% {
     background-color: green;
   }
-  50% {
+  37% {
     background-color: yellow;
   }
-  75% {
+  62% {
     background-color: blue;
   }
-  100% {
+  88% {
     background-color: red;
+  }
+  100% {
+    background-color: purple;
   }
 }
 * {
@@ -161,17 +179,17 @@ a {
   color: white;
 }
 div.navbar-brand:hover {
-  -webkit-animation: colors 5s infinite;
-  -moz-animation: colors 5s infinite;
-  animation: colors 5s infinite;
-  animation-fill-mode: forwards;
+  -webkit-animation: colors 5s infinite ease-in;
+  -moz-animation: colors 5s infinite ease-in;
+  animation: colors 5s infinite ease-in;
+  animation-fill-mode: forwards ease-in;
   cursor: pointer;
 }
 div.reset:hover {
-  -webkit-animation: colorsR 5s infinite;
-  -moz-animation: colorsR 5s infinite;
-  animation: colorsR 5s infinite;
-  animation-fill-mode: forwards;
+  -webkit-animation: colorsR 5s infinite ease-in;
+  -moz-animation: colorsR 5s infinite ease-in;
+  animation: colorsR 5s infinite ease-in;
+  animation-fill-mode: forwards ease-in;
   cursor: pointer;
 }
 .navbar-brand {
@@ -343,7 +361,129 @@ span {
   color: black;
   transition: .5s;
 }
-@media all and (max-width:880px) {
+@media all and (min-height: 0) and (max-width:880px) {
+  @keyframes colors {
+    0% {
+      background-color: red;
+    }
+    12% {
+      background-color: purple;
+    }
+    37% {
+      background-color: green;
+    }
+    62% {
+      background-color: yellow;
+    }
+    88% {
+      background-color: blue;
+    }
+    100% {
+      background-color: red;
+    }
+  }
+  @-webkit-keyframes colors {
+    0% {
+      background-color: red;
+    }
+    12% {
+      background-color: purple;
+    }
+    37% {
+      background-color: green;
+    }
+    62% {
+      background-color: yellow;
+    }
+    88% {
+      background-color: blue;
+    }
+    100% {
+      background-color: red;
+    }
+  }
+  @-moz-keyframes colors {
+    0% {
+      background-color: red;
+    }
+    12% {
+      background-color: purple;
+    }
+    37% {
+      background-color: green;
+    }
+    62% {
+      background-color: yellow;
+    }
+    88% {
+      background-color: blue;
+    }
+    100% {
+      background-color: red;
+    }
+  }
+  @keyframes colorsR {
+    0% {
+      background-color: purple;
+    }
+    12% {
+      background-color: green;
+    }
+    37% {
+      background-color: yellow;
+    }
+    62% {
+      background-color: blue;
+    }
+    88% {
+      background-color: red;
+    }
+    100% {
+      background-color: purple;
+    }
+  }
+  @-webkit-keyframes colorsR {
+    0% {
+      background-color: purple;
+    }
+    12% {
+      background-color: green;
+    }
+    37% {
+      background-color: yellow;
+    }
+    62% {
+      background-color: blue;
+    }
+    88% {
+      background-color: red;
+    }
+    100% {
+      background-color: purple;
+    }
+  }
+  @-moz-keyframes colorsR {
+    0% {
+      background-color: purple;
+    }
+    12% {
+      background-color: green;
+    }
+    37% {
+      background-color: yellow;
+    }
+    62% {
+      background-color: blue;
+    }
+    88% {
+      background-color: red;
+    }
+    100% {
+      background-color: purple;
+    }
+  }
+
+
   li {
     padding-left: 0px;
     padding-bottom: 15px;
@@ -426,10 +566,10 @@ span {
     background-color: black;
     height: 35px;
     width: 40px;
-    right: 0;
-    bottom: 0;
+    right: 5px;
+    top: 10px;
     font-size: 8px;
-    text-align: center;
+    text-align: left;
 
   }
   footer {
@@ -445,22 +585,23 @@ span {
   .keyelem {
     display: block;
   }
-}
+
 ol {
   padding: 0px;
   height: 130px;
 }
 div.navbar-brand:hover {
-  -webkit-animation: colors 5s;
-  -moz-animation: colors 5s;
-  animation: colors 5s;
+  -webkit-animation: colors 2.5s;
+  -moz-animation: colors 2.5s;
+  animation: colors 2.5s;
   animation-fill-mode: forwards;
   cursor: pointer;
 }
 div.reset:hover {
-  -webkit-animation: colorsR 5s;
-  -moz-animation: colorsR 5s;
-  animation: colorsR 5s;
+  -webkit-animation: colorsR 2.5s;
+  -moz-animation: colorsR 2.5s;
+  animation: colorsR 2.5s;
   animation-fill-mode: forwards;
   cursor: pointer;
+}
 }
