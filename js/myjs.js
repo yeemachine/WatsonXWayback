@@ -9,20 +9,19 @@ var submitData= function(){
   var inputMonth= $("#sel2").val();
   var inputDay= $("#sel3").val();
   var inputLink = $("#comment").text();
-  console.log(inputLink);
+
 
   urlBase = urlBase+"&url=" + encodeURIComponent("http://web.archive.org/web/"+inputYear+inputMonth+inputDay+"012102id_/" + inputLink);
   urlBase = urlBase + "&outputMode=json";
   urlBase = urlBase + "&showSourceText=1"
-  console.log(urlBase);
+
 
 var emotions=[];
   $.ajax({
     url: urlBase,
     type: 'POST',
     success: function(data) {
-      console.log(data);
-      console.log(data.text);
+
 
       if(data.status==="ERROR"){
           $( ".output" ).prepend( "<br>Please try a different date or website.<br>").fadeIn("slow");
@@ -50,7 +49,7 @@ var emotions=[];
 
     var wayback=data.url;
     if(wayback.substr(0,27)!="http://web.archive.org/web/"){
-      console.log("no date")
+
       $( ".output" ).prepend(
       "<li class='chart'><div class='number anger nhide' style='width:"+anger+"%;height:30px;margin-top:15px;'>"+postanger+"%</div><div class='number disgust nhide' style='width:"+disgust+"%;height:30px;margin-top:15px;'>"+postdisgust+"%</div><div class='number fear nhide' style='width:"+fear+"%;height:30px;margin-top:15px;'>"+postfear+"%</div><div class='number joy nhide' style='width:"+joy+"%;height:30px;margin-top:15px;'>"+postjoy+"%</div><div class='number sadness nhide' style='width:"+sadness+"%;height:30px;margin-top:15px;'>"+postsadness+"%</div></li>").find("li:first").hide().fadeIn('slow');
       $( ".output" ).prepend(
@@ -67,11 +66,7 @@ var emotions=[];
     var actualmin=wayback.substr(37, 2);
 
 
-    console.log(actualyear);
-    console.log(actualmonth);
-    console.log(actualday);
-    console.log(actualhour);
-    console.log(actualmin);
+    
 
 
 
