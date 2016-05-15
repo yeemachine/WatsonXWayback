@@ -424,11 +424,13 @@ span {
   .Watson {
     position: fixed;
     background-color: black;
-    height: 50px;
-    width: 30px;
+    height: 35px;
+    width: 40px;
     right: 0;
     bottom: 0;
     font-size: 8px;
+    text-align: center;
+
   }
   footer {
     position: fixed;
