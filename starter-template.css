@@ -130,6 +130,9 @@ font-family: 'myriad_set_proultralight';
 font-size: 20px;
 
 }
+.element br{
+    display: none
+}
 .navbar{
   position:fixed;
 
@@ -218,6 +221,7 @@ section{
 }
 
 footer{
+  display: none;
   position: fixed;
   right: 0;
   bottom:0;
