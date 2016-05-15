@@ -135,7 +135,7 @@ var submitData = function() {
               $(".number.disgust").toggleClass("show");
             },
 
-            click: function(e) {
+            'touchstart click': function(e) {
               // Click event handler
               $(".disgust.line").toggleClass("hover");
               $(".disgust.line").toggleClass("bar");

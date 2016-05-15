@@ -343,7 +343,7 @@ span {
   color: black;
   transition: .5s;
 }
-@media all and (max-width:630px) {
+@media all and (max-width:880px) {
   li {
     padding-left: 0px;
     padding-bottom: 15px;
