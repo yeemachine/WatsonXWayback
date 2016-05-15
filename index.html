@@ -1,201 +1,215 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
 
 
-    <title>WATSON Analyzes Sites</title>
+  <title>WATSON Analyzes Sites</title>
 
 
-    <link href="starter-template.css" rel="stylesheet">
+  <link href="starter-template.css" rel="stylesheet">
 
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/myjs.js"></script>
-    <script src="js/typed.js"></script>
-    <script type="text/javascript" src="js/jquery.jrumble.1.3.min.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/myjs.js"></script>
+  <script src="js/typed.js"></script>
+  <script type="text/javascript" src="js/jquery.jrumble.1.3.min.js"></script>
 
 
 
-    <script>
-
-  $(function(){
+  <script>
+    $(function() {
       $(".element").typed({
-        strings: ["Enter a website","http://www.apple.com/support"],
+        strings: ["Enter a website", "http://www.apple.com/support"],
         typeSpeed: 7,
         showCursor: true
       });
-      $( ".reset" ).click(function() {
-      $(".output").html("");
+      $(".reset").click(function() {
+        $(".output").html("");
+      });
     });
-  });
+  </script>
 
-</script>
+</head>
 
-  </head>
+<body>
 
-  <body>
+  <nav class="navbar">
+    <ul class="input">
 
-    <nav class="navbar">
-          <ul class="input">
+      <li>
+        <container>
+          <div class="form-group">
+            <select class="form-control" id="sel1">
+              <option>2016</option>
+              <option>2015</option>
+              <option>2014</option>
+              <option>2013</option>
+              <option>2012</option>
+              <option>2011</option>
+              <option>2010</option>
+              <option>2009</option>
+              <option>2008</option>
+              <option>2007</option>
+              <option>2006</option>
+              <option>2005</option>
+              <option>2004</option>
+              <option>2003</option>
+              <option>2002</option>
+              <option>2001</option>
+              <option>2000</option>
+              <option>1999</option>
+              <option>1998</option>
+              <option>1997</option>
+              <option>1996</option>
+              <option>1995</option>
+              <option>1994</option>
+              <option>1993</option>
+              <option>1992</option>
+              <option>1991</option>
+              <option>1990</option>
+            </select>
+          </div>
 
-            <li>
-              <container>
-              <div class="form-group">
-                <select class="form-control" id="sel1">
-                <option>2016</option>
-                <option>2015</option>
-                <option>2014</option>
-                <option>2013</option>
-                <option>2012</option>
-                <option>2011</option>
-                <option>2010</option>
-                <option>2009</option>
-                <option>2008</option>
-                <option>2007</option>
-                <option>2006</option>
-                <option>2005</option>
-                <option>2004</option>
-                <option>2003</option>
-                <option>2002</option>
-                <option>2001</option>
-                <option>2000</option>
-                <option>1999</option>
-                <option>1998</option>
-                <option>1997</option>
-                <option>1996</option>
-                <option>1995</option>
-                <option>1994</option>
-                <option>1993</option>
-                <option>1992</option>
-                <option>1991</option>
-                <option>1990</option>
-                </select>
-              </div>
+          <div class="form-group">
+            <select class="form-control" id="sel2">
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="sel3">
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option>
+            </select>
+          </div>
+        </container>
+      </li>
+      <li>
+        <div class="form-group">
+          <p class="element" contenteditable="true" id="comment">http://www.apple.com/support</p>
+          <!-- <textarea class="form-control element" rows="1"  id="comment">http://www.apple.com/support</textarea> -->
+        </div>
+      </li>
+      <container>
+        <li>
+          <div class="navbar-brand" onclick="submitData()"><a class="navbar-brand" href="#">analyze TONE</a></div>
 
-              <div class="form-group">
-                <select class="form-control" id="sel2">
-                  <option>01</option>
-                  <option>02</option>
-                  <option>03</option>
-                  <option>04</option>
-                  <option>05</option>
-                  <option>06</option>
-                  <option>07</option>
-                  <option>08</option>
-                  <option>09</option>
-                  <option>10</option>
-                  <option>11</option>
-                  <option>12</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <select class="form-control" id="sel3">
-                  <option>01</option>
-                  <option>02</option>
-                  <option>03</option>
-                  <option>04</option>
-                  <option>05</option>
-                  <option>06</option>
-                  <option>07</option>
-                  <option>08</option>
-                  <option>09</option>
-                  <option>10</option>
-                  <option>11</option>
-                  <option>12</option>
-                  <option>01</option>
-                  <option>02</option>
-                  <option>03</option>
-                  <option>04</option>
-                  <option>05</option>
-                  <option>06</option>
-                  <option>07</option>
-                  <option>08</option>
-                  <option>09</option>
-                  <option>10</option>
-                  <option>11</option>
-                  <option>12</option>
-                  <option>13</option>
-                  <option>14</option>
-                  <option>15</option>
-                  <option>16</option>
-                  <option>17</option>
-                  <option>18</option>
-                  <option>19</option>
-                  <option>20</option>
-                  <option>21</option>
-                  <option>22</option>
-                  <option>23</option>
-                  <option>24</option>
-                  <option>25</option>
-                  <option>26</option>
-                  <option>27</option>
-                  <option>28</option>
-                  <option>29</option>
-                  <option>30</option>
-                  <option>31</option>
-                </select>
-              </div>
-            </container>
-            </li>
-            <li>
-              <div class="form-group">
-                <p class="element" contenteditable="true" id="comment">http://www.apple.com/support</p>
-              <!-- <textarea class="form-control element" rows="1"  id="comment">http://www.apple.com/support</textarea> -->
-              </div>
-            </li>
-            <container>
-            <li>
-            <div class="navbar-brand" onclick="submitData()"><a class="navbar-brand"  href="#" >analyze TONE</a></div>
-
-          </li>
-            <li><div class="reset"><a class="reset">clear ALL</a></div>
-            </li>
-          </container>
-          <div class="Watson"><a href="http://www.alchemyapi.com/">Powered by IBM <span>Watson</span>&trade;</a></div>
-          <section class="keynav">
-            <div class="keyelem" style="color:red">Anger</div>
-             <div class="keyelem" style="color:purple">Disgust</div>
-             <div class="keyelem" style="color:green">Fear</div>
-             <div class="keyelem" style="color:yellow">Joy</div>
-             <div class="keyelem" style="color:blue">Sadness</div>
-          </section>
-
-
-          </ul>
+        </li>
+        <li>
+          <div class="reset"><a class="reset">clear ALL</a></div>
+        </li>
+      </container>
+      <div class="Watson"><a href="http://www.alchemyapi.com/">Powered by IBM <span>Watson</span>&trade;</a></div>
+      <section class="keynav">
+        <div class="keyelem" style="color:red">Anger</div>
+        <div class="keyelem" style="color:purple">Disgust</div>
+        <div class="keyelem" style="color:green">Fear</div>
+        <div class="keyelem" style="color:yellow">Joy</div>
+        <div class="keyelem" style="color:blue">Sadness</div>
+      </section>
 
 
-
-    </nav>
+    </ul>
 
 
 
+  </nav>
 
-    <div class="spacer"></div>
+
+
+
+  <div class="spacer"></div>
   <ul class="output">
 
   </ul>
 
   <footer>
     <section>
-    <div class="mobile" style='background-color:red'><p class="hide">anger</p></div><div class="key">anger</div>
-  </section>
-  <section>
-    <div class="mobile" style='background-color:purple'><p class="hide">disgust</p></div><div class="key">disgust</div>
+      <div class="mobile" style='background-color:red'>
+        <p class="hide">anger</p>
+      </div>
+      <div class="key">anger</div>
     </section>
     <section>
-    <div class="mobile" style='background-color:green'><p class="hide">fear</p></div><div class="key">fear</div>
+      <div class="mobile" style='background-color:purple'>
+        <p class="hide">disgust</p>
+      </div>
+      <div class="key">disgust</div>
     </section>
     <section>
-    <div class="mobile" style='background-color:yellow'><p class="hide" id="black">joy</p></div><div class="key">joy</div>
+      <div class="mobile" style='background-color:green'>
+        <p class="hide">fear</p>
+      </div>
+      <div class="key">fear</div>
     </section>
     <section>
-    <div class="mobile" style='background-color:blue'><p class="hide">sadness</p></div><div class="key">sadness</div>
+      <div class="mobile" style='background-color:yellow'>
+        <p class="hide" id="black">joy</p>
+      </div>
+      <div class="key">joy</div>
+    </section>
+    <section>
+      <div class="mobile" style='background-color:blue'>
+        <p class="hide">sadness</p>
+      </div>
+      <div class="key">sadness</div>
     </section>
   </footer>
 
@@ -206,7 +220,7 @@
 
 
 
-  </body>
+</body>
 
 
 </html>

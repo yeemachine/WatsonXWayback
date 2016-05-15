@@ -1,142 +1,205 @@
 @font-face {
-    font-family: 'myriad_set_proultralight';
-    src: url('fonts/myriad_set_pro_100_ultralight-webfont.eot');
-    src: url('fonts/myriad_set_pro_100_ultralight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/myriad_set_pro_100_ultralight-webfont.woff2') format('woff2'),
-         url('fonts/myriad_set_pro_100_ultralight-webfont.woff') format('woff'),
-         url('fonts/myriad_set_pro_100_ultralight-webfont.ttf') format('truetype'),
-         url('fonts/myriad_set_pro_100_ultralight-webfont.svg#myriad_set_proultralight') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'myriad_set_proultralight';
+  src: url('fonts/myriad_set_pro_100_ultralight-webfont.eot');
+  src: url('fonts/myriad_set_pro_100_ultralight-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/myriad_set_pro_100_ultralight-webfont.woff2') format('woff2'), url('fonts/myriad_set_pro_100_ultralight-webfont.woff') format('woff'), url('fonts/myriad_set_pro_100_ultralight-webfont.ttf') format('truetype'), url('fonts/myriad_set_pro_100_ultralight-webfont.svg#myriad_set_proultralight') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-font-family: 'MyriadPro-Regular';
-src: url('fonts/MyriadPro-Regular.otf');
+  font-family: 'MyriadPro-Regular';
+  src: url('fonts/MyriadPro-Regular.otf');
 }
-
-@keyframes blink{
-    0% { opacity:0; }
-    50% { opacity:1; }
-    100% { opacity:0; }
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-@-webkit-keyframes blink{
-    0% { opacity:0; }
-    50% { opacity:1; }
-    100% { opacity:0; }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-@-moz-keyframes blink{
-    0% { opacity:0; }
-    50% { opacity:1; }
-    100% { opacity:0; }
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-@keyframes colors{
-    0% { background-color:red; }
-    25% { background-color:purple; }
-    50% { background-color:green; }
-    75% { background-color:yellow; }
-    100% { background-color:blue; }
+@keyframes colors {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: purple;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: blue;
+  }
 }
-@-webkit-keyframes colors{
-    0% { background-color:red; }
-    25% { background-color:purple; }
-    50% { background-color:green; }
-    75% { background-color:yellow; }
-    100% { background-color:blue; }
+@-webkit-keyframes colors {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: purple;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: blue;
+  }
 }
-@-moz-keyframes colors{
-    0% { background-color:red; }
-    25% { background-color:purple; }
-    50% { background-color:green; }
-    75% { background-color:yellow; }
-    100% { background-color:blue; }
+@-moz-keyframes colors {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: purple;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: blue;
+  }
 }
-@keyframes colorsR{
-    0% { background-color:purple; }
-    25% { background-color:green; }
-    50% { background-color:yellow; }
-    75% { background-color:blue; }
-    100% { background-color:red; }
+@keyframes colorsR {
+  0% {
+    background-color: purple;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
 }
-@-webkit-keyframes colorsR{
-    0% { background-color:purple; }
-    25% { background-color:green; }
-    50% { background-color:yellow; }
-    75% { background-color:blue; }
-    100% { background-color:red; }
+@-webkit-keyframes colorsR {
+  0% {
+    background-color: purple;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
 }
-@-moz-keyframes colorsR{
-    0% { background-color:purple; }
-    25% { background-color:green; }
-    50% { background-color:yellow; }
-    75% { background-color:blue; }
-    100% { background-color:red; }
+@-moz-keyframes colorsR {
+  0% {
+    background-color: purple;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
 }
-*{
-
-  margin:0;
+* {
+  margin: 0;
   border: 0;
   list-style-type: none;
   outline: none;
-
-
-
-
 }
-html{
+html {
   font-family: 'MyriadPro-Regular';
-
 }
-body{
+body {
   background-color: white;
 }
-a{
+a {
   text-decoration: none;
-
   color: white;
 }
-div.navbar-brand:hover{
+div.navbar-brand:hover {
   -webkit-animation: colors 5s infinite;
   -moz-animation: colors 5s infinite;
   animation: colors 5s infinite;
   animation-fill-mode: forwards;
-  cursor:pointer;
+  cursor: pointer;
 }
-div.reset:hover{
+div.reset:hover {
   -webkit-animation: colorsR 5s infinite;
   -moz-animation: colorsR 5s infinite;
   animation: colorsR 5s infinite;
   animation-fill-mode: forwards;
-  cursor:pointer;
+  cursor: pointer;
 }
-.navbar-brand{
-border: 10px;
+.navbar-brand {
+  border: 10px;
 }
-select{
-
+select {
   background-color: black;
   color: white;
   font-family: 'myriad_set_proultralight';
   font-size: 20px;
 }
-container{
+container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.element{
-display:inline;
-font-family: 'myriad_set_proultralight';
-font-size: 20px;
-
+.element {
+  display: inline;
+  font-family: 'myriad_set_proultralight';
+  font-size: 20px;
 }
-.element br{
-    display: none
+.element br {
+  display: none
 }
-.navbar{
-  position:fixed;
-
-  height:60px;
+.navbar {
+  position: fixed;
+  height: 60px;
   width: 100%;
   background-color: black;
   display: flex;
@@ -145,73 +208,66 @@ font-size: 20px;
   justify-content: center;
   color: white;
 }
-.output{
-  display:block;
-  width:80%;
+.output {
+  display: block;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
-  color:black;
+  color: black;
   font-family: 'MyriadPro-Regular';
 }
-.chart{
-  display:flex;
+.chart {
+  display: flex;
   flex-direction: row;
-
   margin-left: auto;
   margin-right: auto;
-
-
 }
-ol{
-  padding:0px;
-  height:110px;
+ol {
+  padding: 0px;
+  height: 110px;
 }
-.container{
-  display:flex;
+.container {
+  display: flex;
   flex-direction: row;
-
   margin-left: auto;
   margin-right: auto;
-  height:100px;
+  height: 100px;
 }
-ul{
-  width:80%;
+ul {
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;;
-  padding-left:0px;
-}
-li{
+  justify-content: flex-start;
+  ;
   padding-left: 0px;
-  padding-right:30px;
 }
-
-
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s 8;
-    -moz-animation: blink 0.7s 8;
-    animation: blink 0.7s 8;
-    animation-fill-mode: forwards;
+li {
+  padding-left: 0px;
+  padding-right: 30px;
 }
-
-section{
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s 8;
+  -moz-animation: blink 0.7s 8;
+  animation: blink 0.7s 8;
+  animation-fill-mode: forwards;
+}
+section {
   display: flex;
   flex-direction: row-reverse;
-
 }
-.keynav{
+.keynav {
   flex-direction: row;
 }
-.keyelem{
-  display:none;
+.keyelem {
+  display: none;
   padding-left: 10px;
   padding-right: 10px;
 }
-.key{
+.key {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -219,22 +275,21 @@ section{
   margin-right: 15px;
   font-family: 'myriad_set_proultralight'
 }
-
-footer{
+footer {
   display: none;
   position: fixed;
   right: 0;
-  bottom:0;
+  bottom: 0;
 }
-.hide{
+.hide {
   display: none;
-  color:white;
+  color: white;
 }
-.spacer{
+.spacer {
   width: auto;
   height: 60px;
 }
-div.navbar-brand{
+div.navbar-brand {
   background-color: red;
   height: 60px;
   width: 120px;
@@ -242,9 +297,8 @@ div.navbar-brand{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
 }
-div.reset{
+div.reset {
   background-color: purple;
   height: 60px;
   width: 120px;
@@ -253,88 +307,71 @@ div.reset{
   align-items: center;
   justify-content: center;
 }
-
-.Watson{
-  font-family:   "HelveticaNeue-Light";
+.Watson {
+  font-family: "HelveticaNeue-Light";
   font-size: 10px;
 }
-span{
+span {
   font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold";
 }
-.mobile{
-  width:30px;
-  height:30px;
+.mobile {
+  width: 30px;
+  height: 30px;
 }
-
-.number{
+.number {
   text-align: center;
-
 }
-
-.bar{
-  height:30px;
+.bar {
+  height: 30px;
   transition: .5s;
 }
-.hover{
-  height:50px;
-  transition: .5s;
-
-}
-.anger{
-
-}
-.disgust{
-
-}
-.fear{
-
-}
-.joy{
-
-}
-.sadness{
-
-}
-.nhide{
-  color:transparent;
+.hover {
+  height: 50px;
   transition: .5s;
 }
-.show{
-  color:black;
-  transition:.5s;
+.anger {}
+.disgust {}
+.fear {}
+.joy {}
+.sadness {}
+.nhide {
+  color: transparent;
+  transition: .5s;
+}
+.show {
+  color: black;
+  transition: .5s;
 }
 @media all and (max-width:630px) {
-
-
-  li{
+  li {
     padding-left: 0px;
-    padding-bottom:15px;
+    padding-bottom: 15px;
   }
-  .hide{
+  .hide {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color:white;
-    font-size:10px;
+    color: white;
+    font-size: 10px;
     font-family: 'myriad_set_proultralight';
-    -ms-transform: rotate(-90deg); /* IE 9 */
-   -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
-   transform: rotate(-90deg);
-   padding-right: 40px;
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+    padding-right: 40px;
   }
-  .key{
+  .key {
     display: none;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-right: 4px;
     font-size: 10px;
-
-
   }
-  #black{
-    color:black;
+  #black {
+    color: black;
   }
   ul {
     display: flex;
@@ -342,30 +379,30 @@ span{
     align-items: center;
     justify-content: center;
   }
-  .navbar{
-    height:200px
+  .navbar {
+    height: 210px
   }
-  .spacer{
+  .spacer {
     width: auto;
-    height: 200px;
+    height: 210px;
   }
-  container{
+  container {
     margin-top: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  li{
+  li {
     padding-left: 0px;
-    padding-right:0px;
-    padding-bottom:15px;
+    padding-right: 0px;
+    padding-bottom: 15px;
   }
-  .form-group{
+  .form-group {
     padding-left: 10px;
-    padding-right:10px;
+    padding-right: 10px;
   }
-  div.navbar-brand{
+  div.navbar-brand {
     background-color: red;
     height: 43px;
     width: 120px;
@@ -374,7 +411,7 @@ span{
     align-items: center;
     justify-content: center;
   }
-  div.reset{
+  div.reset {
     background-color: purple;
     height: 43px;
     width: 120px;
@@ -383,32 +420,44 @@ span{
     align-items: center;
     justify-content: center;
   }
-  .Watson{
-    position:fixed;
+  .Watson {
+    position: fixed;
     background-color: black;
-    height:50px;
-    width:30px;
-    right:0;
-    bottom:0;
+    height: 50px;
+    width: 30px;
+    right: 0;
+    bottom: 0;
     font-size: 8px;
   }
-
-  footer{
+  footer {
     position: fixed;
     right: 0;
-    bottom:50px;
+    bottom: 50px;
   }
-  .mobile{
-    width:30px;
-    height:50px;
+  .mobile {
+    width: 30px;
+    height: 50px;
     display: none;
   }
-  .keyelem{
-    display:block;
+  .keyelem {
+    display: block;
   }
 }
-
-ol{
-  padding:0px;
-  height:130px;
+ol {
+  padding: 0px;
+  height: 130px;
+}
+div.navbar-brand:hover {
+  -webkit-animation: colors 5s;
+  -moz-animation: colors 5s;
+  animation: colors 5s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+div.reset:hover {
+  -webkit-animation: colorsR 5s;
+  -moz-animation: colorsR 5s;
+  animation: colorsR 5s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
 }
