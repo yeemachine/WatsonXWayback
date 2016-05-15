@@ -66,14 +66,13 @@ var emotions=[];
     var actualmin=wayback.substr(37, 2);
 
 
-    
+
+
 
 
 
     $( ".output" ).prepend(
-    "<li class='chart'><div class='number anger nhide' style='width:"+anger+"%;height:30px;margin-top:15px;'>"+postanger+"%</div><div class='number disgust nhide' style='width:"+disgust+"%;height:30px;margin-top:15px;'>"+postdisgust+"%</div><div class='number fear nhide' style='width:"+fear+"%;height:30px;margin-top:15px;'>"+postfear+"%</div><div class='number joy nhide' style='width:"+joy+"%;height:30px;margin-top:15px;'>"+postjoy+"%</div><div class='number sadness nhide' style='width:"+sadness+"%;height:30px;margin-top:15px;'>"+postsadness+"%</div></li>").find("li:first").hide().fadeIn('slow');
-    $( ".output" ).prepend(
-    "<li class='chart'><div class='anger line bar' style='width:"+anger+"%;margin-top:15px;background-color:red'></div><div class='disgust line bar' style='width:"+disgust+"%;margin-top:15px;background-color:purple'></div><div class='fear line bar' style='width:"+fear+"%;margin-top:15px;background-color:green'></div><div class='joy line bar' style='width:"+joy+"%;margin-top:15px;background-color:yellow'></div><div class='sadness line bar' style='width:"+sadness+"%;margin-top:15px;background-color:blue'></div></li>").find("li:first").hide().fadeIn('slow');
+    "<ol><li class='chart'><div class='anger line bar' style='width:"+anger+"%;margin-top:15px;background-color:red'></div><div class='disgust line bar' style='width:"+disgust+"%;margin-top:15px;background-color:purple'></div><div class='fear line bar' style='width:"+fear+"%;margin-top:15px;background-color:green'></div><div class='joy line bar' style='width:"+joy+"%;margin-top:15px;background-color:yellow'></div><div class='sadness line bar' style='width:"+sadness+"%;margin-top:15px;background-color:blue'></div></li><li class='chart'><div class='number anger nhide' style='width:"+anger+"%;height:30px;margin-top:15px;'>"+postanger+"%</div><div class='number disgust nhide' style='width:"+disgust+"%;height:30px;margin-top:15px;'>"+postdisgust+"%</div><div class='number fear nhide' style='width:"+fear+"%;height:30px;margin-top:15px;'>"+postfear+"%</div><div class='number joy nhide' style='width:"+joy+"%;height:30px;margin-top:15px;'>"+postjoy+"%</div><div class='number sadness nhide' style='width:"+sadness+"%;height:30px;margin-top:15px;'>"+postsadness+"%</div></li></ol>").find("li:first").hide().fadeIn('slow');
     $( ".output" ).prepend( "<li>"+"<br/>" +actualyear+"-"+actualmonth+"-"+actualday+"   "+actualhour+":"+actualmin+"</br><br>"+ data.text + "<br/>"+"</li>"  ).find("li:first").hide().fadeIn('slow');
     }
 

@@ -157,8 +157,20 @@ font-size: 20px;
   margin-left: auto;
   margin-right: auto;
 
-}
 
+}
+ol{
+  padding:0px;
+  height:100px;
+}
+.container{
+  display:flex;
+  flex-direction: row;
+
+  margin-left: auto;
+  margin-right: auto;
+  height:100px;
+}
 ul{
   width:80%;
   margin-left: auto;
