@@ -33,6 +33,15 @@
         $(".output").html("");
       });
     });
+    /* Open when someone clicks on the span element */
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
   </script>
 
 </head>
@@ -156,14 +165,26 @@
           <div class="reset"><a class="reset">clear ALL</a></div>
         </li>
       </container>
-      <div class="Watson"><a href="http://www.alchemyapi.com/">Powered by IBM <span>Watson</span>&trade;</a></div>
-      <section class="keynav">
-        <div class="keyelem" style="color:red">Anger</div>
-        <div class="keyelem" style="color:purple">Disgust</div>
-        <div class="keyelem" style="color:green">Fear</div>
-        <div class="keyelem" style="color:yellow">Joy</div>
-        <div class="keyelem" style="color:blue">Sadness</div>
-      </section>
+      <div id="myNav" class="overlay" >
+      <!-- The overlay -->
+
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content" >
+          <p>Using IBM Watson's AlchemyLanguage API, this app parses any webpage's plain text from WaybackMachine's archives. This is then filtered by Watson's tone analyzer which returns the emotional composition of the webpage. Watson generalizes tone in 5 emotions: Anger, Disgust, Fear, Joy, and Sadness.
+
+AlchemyAPI provides a free apiKey to those who register. Check out AlchemyApi for the endpoint I used.</p>
+          <a href="http://www.alchemyapi.com/" style="font-family:'helvetica'">IBM <span>Watson</span>&trade; Alchemy Api</a>
+
+        </div>
+
+      </div>
+
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <div onclick="openNav()" class="Watson">Powered by IBM <span>Watson</span>&trade;</div>
 
 
     </ul>
