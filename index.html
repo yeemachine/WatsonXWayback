@@ -11,7 +11,7 @@
 
 
   <title>WATSON Analyzes Sites</title>
-<link rel="shortcut icon" href="http://www.alchemyapi.com/sites/default/files/navicon_AlchemyAPI.png" type="image/png"></link>
+  <link rel="shortcut icon" href="http://www.alchemyapi.com/sites/default/files/navicon_AlchemyAPI.png" type="image/png"></link>
 
   <link href="starter-template.css" rel="stylesheet">
 
@@ -34,14 +34,14 @@
       });
     });
     /* Open when someone clicks on the span element */
-function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-}
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-}
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
   </script>
 
 </head>
@@ -159,88 +159,32 @@ function closeNav() {
       <container>
         <li>
           <div class="navbar-brand" onclick="submitData()"><a class="navbar-brand" href="#">analyze TONE</a></div>
-
         </li>
         <li>
           <div class="reset"><a class="reset">clear ALL</a></div>
         </li>
       </container>
-      <div id="myNav" class="overlay" >
-      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+        <!-- The overlay -->
 
 
         <!-- Button to close the overlay navigation -->
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
         <!-- Overlay content -->
-        <div class="overlay-content" >
-          <p>Using IBM Watson's AlchemyLanguage API, this app parses any webpage's plain text from WaybackMachine's archives. This is then filtered by Watson's tone analyzer which returns the emotional composition of the webpage. Watson generalizes tone in 5 emotions: Anger, Disgust, Fear, Joy, and Sadness.
-
-AlchemyAPI provides a free apiKey to those who register. Check out AlchemyApi for the endpoint I used.</p>
+        <div class="overlay-content">
+          <p>Using IBM Watson's AlchemyLanguage API, this app parses any webpage's plain text from WaybackMachine's archives. This is then filtered by Watson's tone analyzer which returns the emotional composition of the webpage. Watson generalizes tone
+            in 5 emotions: Anger, Disgust, Fear, Joy, and Sadness. AlchemyAPI provides a free apiKey to those who register. Check out AlchemyApi for the endpoint I used.</p>
           <a href="http://www.alchemyapi.com/" style="font-family:'helvetica'">IBM <span>Watson</span>&trade; Alchemy Api</a>
-
         </div>
-
       </div>
-
       <!-- Use any element to open/show the overlay navigation menu -->
       <div onclick="openNav()" class="Watson">Powered by IBM <span>Watson</span>&trade;</div>
-
-
     </ul>
-
-
-
   </nav>
-
-
-
-
   <div class="spacer"></div>
   <ul class="output">
-
   </ul>
-
-  <footer>
-    <section>
-      <div class="mobile" style='background-color:red'>
-        <p class="hide">anger</p>
-      </div>
-      <div class="key">anger</div>
-    </section>
-    <section>
-      <div class="mobile" style='background-color:purple'>
-        <p class="hide">disgust</p>
-      </div>
-      <div class="key">disgust</div>
-    </section>
-    <section>
-      <div class="mobile" style='background-color:green'>
-        <p class="hide">fear</p>
-      </div>
-      <div class="key">fear</div>
-    </section>
-    <section>
-      <div class="mobile" style='background-color:yellow'>
-        <p class="hide" id="black">joy</p>
-      </div>
-      <div class="key">joy</div>
-    </section>
-    <section>
-      <div class="mobile" style='background-color:blue'>
-        <p class="hide">sadness</p>
-      </div>
-      <div class="key">sadness</div>
-    </section>
-  </footer>
-
-
-
-
-
-
-
-
 </body>
 
 
