@@ -1,6 +1,6 @@
 var submitData = function() {
   $(document).ready(function() {
-    var urlBase = "http://gateway-a.watsonplatform.net/calls/url/URLGetEmotion?";
+    var urlBase = "https://gateway-a.watsonplatform.net/calls/url/URLGetEmotion?";
     var apiKey = "12185cdb4698b0f203b59d58f0b11d0ff2b6e546";
     urlBase = urlBase + "apikey=" + apiKey;
     var inputYear = $("#sel1").val();
